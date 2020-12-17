@@ -1,0 +1,53 @@
+
+.blog_loading
+    left: 50%
+    right 50%
+    transform: translate(-50%, 300%)
+    line-height: 130px
+    text-align: center
+    z-index: 1000   
+
+.blog_loading.in 
+    display: block
+.blog_loading.out
+    display: none
+.blog_loading.out .txt 
+    font-size: 0
+
+    
+.blog_loading.in:after 
+    transform: rotate(90deg)
+    animation: r_after linear 5s infinite
+@keyframes r_after
+    0% {
+         transform: rotate(0)
+        }
+    100% {
+         transform: rotate(360deg)
+        }
+.blog_loading.in:before 
+    
+    animation: r_before linear 10s infinite
+@keyframes r_before
+    0% {
+         transform: rotate(0)
+        }
+    100% {
+         transform: rotate(360deg)
+        }
+.blog_loading.in:before, .blog_loading.in:after
+    content: ''
+    left: 0
+    z-index -3
+
+.blog_loading.in:before, .blog_loading.in:after, .blog_loading
+    position: absolute
+    width 150px    
+    height 130px
+    background-color rgba(0, 0, 0, 0.32)
+    border-radius: 35%
+    
+.blog_loading .txt 
+    font-weight: bold
+    
+    color #fff

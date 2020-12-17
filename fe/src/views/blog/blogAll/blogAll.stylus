@@ -1,0 +1,56 @@
+@import 'oneDark.css'
+body 
+    user-select unset
+.blogAll.d-layout
+    width 1200px
+.blogAll
+    padding-top 50px
+
+.blogAll header
+    text-align: left
+    margin-bottom 20px
+.blogAll header span
+    display: block;
+    font-size .3rem
+    letter-spacing .3px
+    color #c0c0c0
+    margin-top 10px
+.blogAll h2.ui-title, .blogAll header span
+    padding-left 15px
+.blogAll h2.ui-title
+    color: #fff;
+    margin 0
+    padding-top: 15px
+    padding-left 15px
+    text-align: left
+    width:100%;
+    border-top: 5px dashed rgb(123, 140, 132);
+.blogAll article.blog-content
+    background-color rgb(219, 219, 219);
+    height 100%
+    line-height: 1.6
+    text-align: justify;
+    padding: 10px 20px
+.blogAll article p{
+      user-select text
+      text-indent: 2em
+      font-size 1.315rem
+      word-wrap: break-word;
+ }
+  
+.blogAll article img
+    max-width 100%;
+    display block
+@media (max-width:768px) {
+    .blogAll.d-layout {
+       width 95% !important 
+    }
+    .profile .myWords {
+        text-align:  center !important
+    }
+}
+   
+   
+        
+
+    

@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+}
+
+body,
+ul,
+li,
+div,
+section,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.utliClearFloat:after,
+.utliClearFloat::before {
+    display: block;
+    content: " ";
+    clear: both;
+    zoom: 1;
+}
+
+.d-layout {
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px !important;
+}
+
+.threeD-t {
+    color: #734d4d;
+    text-shadow: 0px 0px 0 #734d4d, 0px 1px 0 #734d4d, 0px 2px 0 #734d4d, 0px 3px 0 #734d4d;
+}
+
+@media (max-width:768px) {
+    .b-layout {
+        transition: all 1s;
+        width: 95% !important;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorry</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        
+        .not_container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .not_container .active_left {
+            transform-origin: top left;
+            transform: rotate(90deg);
+            animation: _topText_left 3s forwards;
+        }
+    </style>
+
+    <style data-declearName='animation'>
+        @keyframes _topText_left {
+            0% {
+                opacity: 0;
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(99deg);
+            }
+            100% {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="not_container">
+        <section class="not_title active_left">
+            <h1>404 Not Found🙃</h1>
+        </section>
+
+    </div>
+</body>
+
+</html>

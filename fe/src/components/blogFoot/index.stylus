@@ -1,0 +1,73 @@
+$default_foot_color = #ccc
+
+.blog-foot .blog-foot-top
+  margin-top 50px
+
+.blog-foot .blog-foot-top span
+  display: inline-block
+  font-size 30px
+  color #fff
+  height: 30px;
+
+.blog-foot .blog-foot-top .cn, .blog-foot .blog-foot-top .en
+  width 50%
+  color: #fff
+  text-shadow 0 0 3px #ccc
+  animation: txt-Shadow .9s forwards linear
+
+@keyframes txt-Shadow
+  0%
+    transform: scale(.5);
+    text-shadow 0 0 6px #ccc
+  50%
+    transform: scale(.8);
+    color: crimson
+    text-shadow 0 0 3px #ccc
+  100%
+    transform: scale(1.2);
+    text-shadow 0 0 6px #ccc
+
+
+.blog-foot .blog-foot-top .cn,
+.blog-foot .blog-foot-top .en,
+.blog-foot .blog-foot-body
+  max-width: 800px
+  margin 0 auto
+
+.blog-foot-top .en
+  margin-top 10px !important
+
+.blog-foot .blog-foot-body
+  margin-top 200px
+  text-align: center;
+  color $default_foot_color
+
+.blog-foot .blog-foot-body, .blog-foot .blog-foot-body a
+  color $default_foot_color
+
+.blog-foot .blog-foot-body span {
+  display: inline-block;
+}
+
+.blog-foot .blog-foot-body span:after {
+  display: inline-block;
+  content: '·'
+}
+
+.blog-foot .blog-foot-body span:last-child:after {
+  display: none;
+}
+
+.blog-foot .blog-foot-body span:hover, .blog-foot .blog-foot-body a:hover
+  color #fff
+
+.blog-foot .blog-foot-body
+  font-size: 0.3rem;
+
+.blog-foot .blog-foot-body a
+  font-size .3rem
+  letter-spacing .3px
+  vertical-align middle
+  display: inline-block;
+  padding 10px 0
+  text-decoration: none

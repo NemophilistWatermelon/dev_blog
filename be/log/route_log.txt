@@ -1,0 +1,168 @@
+{
+  "method": "GET",
+  "url": "/api/admin/?t=0ab8d7d2bb5e4d241f9c8fb58c092363",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8"
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=0ab8d7d2bb5e4d241f9c8fb58c092363",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c48-6fhUagWbDlROBU/Ot1vUnJtmtco\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=0ab8d7d2bb5e4d241f9c8fb58c092363",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c48-6fhUagWbDlROBU/Ot1vUnJtmtco\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=0ab8d7d2bb5e4d241f9c8fb58c092363",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c48-6fhUagWbDlROBU/Ot1vUnJtmtco\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=cca1a6978240609e06c8f032d94bbd99",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8"
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=cca1a6978240609e06c8f032d94bbd99",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c48-M1rlbXnFq7TJKQjUuCvycsShS+0\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=a4b8b91b1cd93d4fda0653e7ca9a0793",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8"
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=a4b8b91b1cd93d4fda0653e7ca9a0793",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c48-VrxTMrBYE63KjFwgzgQ/mut3dnY\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=a4b8b91b1cd93d4fda0653e7ca9a0793",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c9e-LR6xqYnFb8XRmaz7VT4/wRZrjgs\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=a4b8b91b1cd93d4fda0653e7ca9a0793",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"1c9e-LR6xqYnFb8XRmaz7VT4/wRZrjgs\""
+  }
+}
+{
+  "method": "GET",
+  "url": "/api/admin/?t=f092b2d66b4f9bf1ce6638578dc9e69f",
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "referer": "http://localhost:3000/api/login",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8"
+  }
+}

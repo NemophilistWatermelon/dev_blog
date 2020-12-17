@@ -1,0 +1,140 @@
+::selection {
+  background-color: #a09e9c;
+}
+
+.BlogImg-Content {
+  position: relative;
+  height: 400px;
+  margin: 0 auto;
+  user-select: text;
+}
+
+.BlogImg-Content {
+  margin-top: 5em !important;
+  margin-bottom: 6em !important;
+}
+
+.BlogImg-Content .blogTop-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 10px 2px rgba(88, 83, 86, 0.3);
+    border-bottom: 7px dashed #d1c4af;
+}
+
+.BlogImg-Content .blogTop-card:last-child {
+  border-bottom: 12px dashed #d1c4af;
+}
+
+.BlogImg-Content .blogTop-card.rotateLowSix {
+  transform: rotate(-6deg);
+}
+
+.BlogImg-Content .blogTop-card.rotateLowTen {
+  transform: rotate(-10deg);
+}
+
+.card-first {
+  width: 50% !important;
+  right: -33px;
+  bottom: -21px;
+}
+
+.card-second {
+  width: 60% !important;
+  right: -21px;
+  top: 8px;
+}
+
+.card-third {
+  margin-top: 30px;
+  border-bottom: 7px dashed #ac9e9e !important;
+}
+
+.BlogImg-Content .blogTop-card .blogTopCar-name {
+  color: #9b9090;
+  padding-top: 80px;
+  font-size: 30px;
+  text-shadow: 0 3px 0 #ececec, 0px 2px 0 #cda3a3;
+}
+
+.BlogImg-Content .blogTop-card .blogTopCar-body {
+  color: #725f5f;
+  padding: 10px 0;
+  font-size: 140px;
+}
+
+.BlogImg-Content .blogTop-card .blogTopCar-foot {
+  font-size: 18px;
+  color: #957b7b;
+}
+
+.BlogImg-Content img {
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  animation: filterImgBlur 3s infinite;
+}
+
+@keyframes filterImgBlur {
+  0% {
+    filter: blur(2px);
+  }
+
+  50% {
+    filter: blur(0px);
+  }
+
+  100% {
+    filter: blur(2px);
+  }
+}
+
+.BlogImg-Content .blog-topFont {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  color: #fff;
+  font-size: 4rem;
+  // background red
+  transform-origin: left top;
+  transform: rotateZ(35deg);
+  animation: rotaSpan 1s forwards cubic-bezier(0.04, 0.65, 1, 1);
+}
+
+@keyframes rotaSpan {
+  0% {
+    transform: rotateZ(15deg);
+  }
+
+  100% {
+    color: #000;
+    transform: rotateZ(80deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-container .blogTop-bar a {
+    display: unset !important;
+  }
+
+  .BlogImg-Content img {
+    height: unset;
+  }
+
+  .BlogImg-Content .blog-topFont {
+    top: 33%; 
+    left: 14%;
+    font-size: 2.83rem;
+  }
+
+  .page-container span {
+    width: unset !important;
+  }
+  .BlogImg-Content .blogTop-card .blogTopCar-body {
+ 
+  font-size: 2rem;
+  }
+
+}

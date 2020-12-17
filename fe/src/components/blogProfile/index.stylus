@@ -1,0 +1,41 @@
+$profileColor = #888
+.profile{
+    // width 1200px
+    padding 10px
+    color #ccc
+    border-top 4px dashed $profileColor
+    user-select text
+    border-bottom 4px dashed $profileColor
+}
+
+.profile .profile-detail p{
+    text-align left
+    text-indent 2em
+    line-height 2
+}
+
+.text-ui {
+    margin 0 3px
+    padding 3px
+    background-color #ccc;
+    font-weight bold
+    color: #353535
+    transition .35s
+
+}
+.text-ui:active {
+    color #fff
+    background-color crimson
+}
+.text-blur
+    display: inline-block;
+    width 2px
+    height 16px
+    vertical-align middle
+    background  #fff
+    animation: textBlur .8s infinite ease;
+@keyframes textBlur
+    0%
+        opacity 0
+    100%
+        opacity 1

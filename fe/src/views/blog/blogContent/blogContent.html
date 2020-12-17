@@ -1,0 +1,22 @@
+<div class="blog-content ">
+    <div class="blog-circleLine">{{ timeStamp | filter_Time_ago }}</div>
+    <div class="b-tit">
+        <router-link :to="{path:'/blog/blogDet/' + artIndex}" :title="tit">
+            {{tit}}
+        </router-link>
+        <div data-name="博文分类" class="blogCatory">
+            <!-- TODO: 增加分类功能 -->
+            <section v-for='(item,index) in catgory' :key="index">
+                <button v-if=" !item == '' " class='cat-blog-ui' @click='HandlerFilterTagName(item)'>
+                    {{item}}
+                </button>
+            </section>
+
+        </div>
+
+        <span class="b-time "> <strong class="b-time-create ">发表于：</strong>{{ time }}</span>
+    </div>
+    <!-- <div class="b-content " v-html='content'>
+    </div> -->
+    <!-- <router-view></router-view> -->
+</div>

@@ -1,0 +1,95 @@
+ $color_35 = #353535
+ // loading
+.b-layout .blog_loading 
+    position absolute
+    width 150px
+    height 150px
+    transition all 1s
+.b-layout .blog_loading.in 
+    opacity 1
+.b-layout .blog_loading.out 
+    opacity 0
+
+
+
+ .blog-content
+        position relative
+        border:13px dashed #353535
+        margin-top 30px !important
+        padding 30px 30px
+        background-color #fff
+        border-radius 5px
+        filter opacity(.78)
+        transition filter .3s
+        box-shadow 0 5px 13px 0  $color_35
+        
+    .blog-content .blog-circleLine
+        position absolute
+        padding 0
+        right: 5px
+        top: 5px
+        width 80px
+        height: 80px
+        text-align: center;
+        line-height 80px
+        font-size 18px
+        color #f0f0f0
+        border-radius 50%
+        background-color #838383
+        perspective 100
+        transform rotate3d(0, 0, 0,0)
+        transition-property: transform;
+        transition-duration: 1s
+    .blog-content .blog-circleLine:hover 
+        // transform rotateY(50deg)
+        transform rotate3d(0, 50, 0,360deg)
+    .blog-content:hover
+        filter opacity(1)
+    .blog-content > *
+        padding 10px 0
+    .blog-content .b-tit
+        text-align left
+    .blog-content .b-tit a
+        color #000
+        font-size 1.2rem
+        font-weight bold
+        text-decoration none
+    .blog-content .b-tit a:hover
+        color #696565;
+    .blog-content .b-tit .b-time
+        display block
+        margin-top 10px
+        font-size 0.883rem
+        padding-left 0.2rem
+        color $color_35
+    .blog-content  .b-time-create
+        color #353535
+
+    .blog-content .b-content
+        padding 10px 0
+        text-indent 2em
+        text-align left
+
+     .blog-content .b-content p
+        overflow hidden;
+        line-height 1.6
+        text-overflow ellipsis;
+        display -webkit-box;
+        -webkit-line-clamp 3;
+        -webkit-box-orient vertical;
+        font-size 18px
+    .blog-content .cat-blog-ui {
+
+        border: none;
+        padding 5px 5px
+        font-size .8rem !important
+        color #fff !important
+        background-color rgb(62, 62, 62)
+    }
+    
+    .blog-content .blogCatory section, .blog-content .cat-blog-ui 
+        display inline-block
+        
+    .blogCatory section .cat-blog-ui 
+        margin 10px 2px 0px 2px
+

@@ -1,0 +1,14 @@
+<div class="blogAll d-layout">
+    <div class="blogBody" v-for='(item, index) in blogData' :key='index'>
+        <header>
+            <h2 class="ui-title">話題·『{{ item.blogTitle }}』</h2>
+            <span><strong>Date：</strong>{{ item.blogCreateTime | filter_Time }}</span>
+        </header>
+        <article class="blog-content d-layout" >
+            <pre v-html='item.blogBody'  v-hightLight>
+                
+            </pre>
+        </article>
+    </div>
+    <Profile></Profile>
+</div>

@@ -1,0 +1,17 @@
+.shadow {
+    animation: _shadow 1s;
+}
+
+@keyframes _shadow {
+    20% {
+        filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5)
+    }
+
+    50% {
+        filter: brightness(0.7) contrast(1) sepia(1) hue-rotate(115deg) saturate(1.5)
+    }
+
+    100% {
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,436 @@
+:root {
+    --mainThemeColor:  hsla(54, 99%, 49%, 0.9);
+    --inputBorderColor: hsl(45, 100%, 54%);
+    --deepYellowColor:  hsl(45, 100%, 54%);
+    --defaultColor: rgba(17, 169, 236, 1);
+    --defaultTodoColor: hsla(54, 100%, 62%, 0.56);
+    --defaultBtnColor: hsl(54, 100%, 62%);
+}
+body {
+    background-color: #FFEB3B;
+}
+.class-todo-error {
+    animation: _errorColorChange 1s linear forwards;
+}
+
+.class-todo-error.hide {
+    display: none;
+}
+
+@keyframes _errorColorChange {
+    0% {
+        opacity: 0;
+        color: pink
+    }
+
+    50% {
+        color: #ffc107;
+    }
+
+    100% {
+        opacity: 1;
+        color: red;
+    }
+}
+
+.time {
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.time:hover {
+    overflow: unset;
+}
+
+.todo_hide {
+    display: none;
+}
+
+.todo_container {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    background: #ffffff;
+    /* box-shadow: 0px 41px 82px #d9d9d9,
+        0px -41px 82px #ffffff; */
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    filter: brightness(0.7) contrast(1) sepia(1) hue-rotate(115deg) saturate(1.5);
+    transition: all 1s;
+    overflow: hidden;
+
+}
+.todo_container:hover {
+    filter: none;
+}
+
+.todoWritePage {
+    width: 100%;
+    height: 100%;
+}
+
+.todoWritePage.hide {
+    display: none
+}
+
+.profile_l {
+    position: absolute;
+    z-index: 10;
+    padding-top: 30px;
+    text-align: center;
+    height: 100%;
+    background-color: var(--mainThemeColor);
+    transform: translateX(-150px);
+    opacity: 0;
+}
+
+.profile_l.activePanel {
+    animation: __activePanel 1s forwards;
+}
+
+@keyframes __activePanel {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.todo_profile .todo_avator {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: var(--mainThemeColor)
+}
+
+.todo_nickname,
+.profile_control {
+    color: #fff;
+    margin: 14px 0;
+}
+
+.todo-title {
+    transform: translateY(62px);
+    text-align: center;
+}
+.todo-title span::selection,
+ .todo_b .menu .bottom span::selection{
+    background-color: gray;
+    color: #5d5d5d;
+}
+.todo-title span {
+    color: var(--defaultTodoColor);
+    font-variant-caps: petite-caps;
+    font-size: 50px;
+    font-weight: 300;
+    /* rgb(30, 39, 46) */
+    text-shadow: 0 0 3px var(--defaultTodoColor),
+        0 3px 3px var(--defaultTodoColor),
+        0 9px 3px var(--defaultTodoColor),
+        0 12px 13px var(--defaultTodoColor);
+}
+
+.todo_pannel {
+    position: absolute;
+    width: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo_pannel.hide, .todo_show.hide {
+    display: none;
+}
+
+/* input  */
+.todo_pannel .pannel-diverse {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo_input_base {
+    /* margin-bottom: 20px; */
+    width: 50%;
+    height: 40px;
+    text-indent: .5em;
+    border-radius: 3px;
+    outline: none;
+    border: 2px none;
+    caret-color: var(--inputBorderColor);
+    border-bottom: 1px solid #eaeaea;
+    transition: border .4s;
+}
+
+/* .todo_input_base:hover {
+    width: 100%;
+    border: 2px none;
+    border-bottom: 2px solid var(--inputBorderColor);
+    transition: all 1s;
+} */
+
+/* button */
+.todo_btn {
+    width: 30%;
+    height: 40px;
+    border: 1px transparent;
+    color: #fff;
+    background-color: var(--defaultBtnColor);
+    transition: all .3s;
+    outline: none;
+}
+
+.todo_btn:active {
+    color: #fff;
+    background-color: var(--deepYellowColor)
+}
+
+.todo_show {
+    padding: 7px;
+    transform: translateY(13px);
+}
+
+.todo_show .todo_show_title {
+    user-select: none;
+    text-align: center;
+    padding: 25px;
+}
+
+.todo_show .todo_show_title span {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 193, 7, 0);
+    text-shadow: 0px 6px 3px #ffc107;
+}
+
+.todo_show .todoResult {
+    height: 300px;
+    overflow-x: hidden;
+}
+
+.todo_show .todo_add {
+    position: relative;
+    height: 50px;
+}
+
+.todo_show .todo_add .todo_add_btn {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    width: 50px;
+    height: inherit;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 150px;
+    background: #fffb40;
+    box-shadow: 3px 4px 20px #fffda3, 0px 1px 20px #ffff4a;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+.todo_show .todo_add .todo_add_btn:hover {
+
+}
+.todo-head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-head span {
+    text-align: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.todo-cell {
+    position: relative;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.3);
+    box-shadow: 0 0 3px 0 rgba(255, 255, 0, 0.3);
+    transform: translateX(0);
+}
+
+.todo_check {
+    position: relative;
+    height: inherit;
+    font-size: 0;
+    opacity: 1;
+}
+
+.todo-cell .class-todo-list.move-left {
+    transform: translateX(10%);
+    /*transition: transform 1s;*/
+}
+
+.todo-cell .class-todo-list {
+    display: flex;
+    width: 100%;
+    transition: transform 1s;
+}
+
+.todo-cell .class-todo-list span {
+    text-align: center;
+    /* border: 1px dashed; */
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    /* padding: 13px; */
+}
+
+.checked_lable {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #FFEB3B;
+}
+
+.checked_lable::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.checkBox {
+    display: none;
+}
+
+.class-todo-select.hidden {
+    opacity: 0;
+    width: 0;
+    transform: translateX(39px) rotateY(-90deg);
+}
+
+.class-todo-select {
+    width: 20%;
+    opacity: 1;
+    transform: translateX(39px) rotateY(0deg);
+    transform-origin: left 50%;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+/*todo select theme add...*/
+.class-todo-select select {
+    /* 清除默认样式 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    border: none;
+    padding: 5px 15px;
+    background-color: unset;
+    outline: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.class-todo-select select option {
+    padding: 5px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+}
+
+.class-todo-select select .select.danger {
+    background-color: rgb(255, 63, 52);
+    color: #fff;
+}
+
+.class-todo-select select {}
+
+.checkBox:checked~.checked_lable::after {
+    opacity: 1;
+}
+
+.todo_index_control {
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.todo_index_control span {
+    display: block;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.todo_index_control span.active {
+    color: #fff;
+    background-color: var(--defaultColor);
+}
+
+.todo_r {
+    width: 100%;
+    height: 100%;
+}
+
+.todo_b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 2px 0 #e5e5e5;
+}
+
+.todo_b .menu {
+    cursor: pointer;
+    width: calc(100% / 4);
+}
+
+.todo_b .menu .top {
+    font-size: 0;
+    text-align: center;
+}
+
+.todo_b .menu .top i {
+    display: inline-block;
+}
+
+.todo_b .menu .bottom span {
+    display: block;
+    font-size: 8px;
+    color: #948a84;
+    text-align: center;
+}

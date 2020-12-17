@@ -1,0 +1,21 @@
+/* tool */
+
+.txt-center {
+    text-align: center;
+}
+
+.c-mb {
+    margin: 0;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}

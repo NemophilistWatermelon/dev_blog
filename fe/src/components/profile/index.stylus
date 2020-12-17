@@ -1,0 +1,36 @@
+.profile
+    // background-color red
+    height 100%
+    color #fff
+   
+    border-bottom 5px dashed #7b8c84
+.profile  .myWords   
+    display block
+    
+    font-size 1.868rem
+    font-weight: bold
+    text-align left !important
+    animation  _textShodow 3s infinite 
+
+@keyframes _textShodow {
+        0% {
+            color #000
+            text-shadow: 0 3px 0 purple , 0 6px 0 #000
+        }
+        50% {
+            color #f66
+            text-shadow: 4px 3px 0 yellow , 0 6px 0 #000
+        }
+        100% {
+            color blue
+            text-shadow: 0 3px 0 red , 4px 6px 0 #000
+        }
+    }
+    
+
+.profile .payfor
+    width 100vw
+    height 100vh
+    background: url('../../assets/img/pay.png') no-repeat center center
+    background-size: 50%  
+    background-attachment fixed
