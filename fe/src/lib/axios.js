@@ -43,7 +43,7 @@ if (env.NODE_ENV == "development") {
     log(env)
 } else {
     // 线上模式
-    // proBaseUrl = 'https://www.catvue.xyz/api/'
+    proBaseUrl = 'https://www.catvue.xyz/api'
 }
 axios.baseUrl = proBaseUrl;
 export default axios;
