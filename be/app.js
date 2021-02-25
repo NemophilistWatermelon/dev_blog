@@ -10,9 +10,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const router = require('./route/init_routes.js');
 const path = require('path');
-//  配置端口号
+const session = require('express-session')
+    //  配置端口号
 const port = 3000;
-var session = require('express-session')
 app.use(session({
         secret: 'keyboard cat',
         resave: false,

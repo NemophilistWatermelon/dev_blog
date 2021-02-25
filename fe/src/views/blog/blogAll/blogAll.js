@@ -15,7 +15,7 @@ var config = {
 
     directives: {
         hightLight: {
-            inserted: function (el) {
+            inserted: function(el) {
                 let blocks = el.querySelectorAll('pre code');
                 blocks.forEach((block) => {
                     hljs.highlightBlock(block)
@@ -36,16 +36,17 @@ var config = {
     },
     methods: {
         setTitle() {
+            log('debugger =++++++', this.blogData)
             let title = this.blogData[0].blogTitle
             document.title = title;
         },
         async getData(index) {
             var data = await this.$blogApi.apiGetBlogDetail(index)
-            this.blogData = data.data
+
+            this.blogData = data
 
         },
         goHeadtop() {
-            console.log('生效了')
             window.scrollTo(0, 0)
         }
     }
