@@ -10,16 +10,11 @@ const Blog_Loading = Vue.extend(blog_loading)
 
 let blog_loading_html = new Blog_Loading()
 const Message = function() {
-
     // 实例创建
     blog_loading_html.vm = blog_loading_html.$mount()
-
-    // document.body.querySelector('.blog-container').insertAdjacentElement('afterend', blog_loading_html.vm.$el);
+        // document.body.querySelector('.blog-container').insertAdjacentElement('afterend', blog_loading_html.vm.$el);
     document.body.insertAdjacentElement('beforeend', blog_loading_html.vm.$el)
     return blog_loading_html.vm;
-
-
-
 }
 
 Message.show = function(msg, trigger = true) {

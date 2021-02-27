@@ -1,5 +1,5 @@
 const log = console.log.bind(console)
-import vue from 'vue'
+
 import axios from 'axios';
 import loading from '@/components/request_loading_html/loading'
 

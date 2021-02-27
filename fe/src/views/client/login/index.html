@@ -1,0 +1,20 @@
+<div class="login_wrap align">
+
+    <div class="head">
+        <span>雜項·div</span>
+    </div>
+    <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="40px" class="demo-ruleForm">
+
+        <el-form-item label="賬號" prop="count">
+            <el-input type="text" v-model="ruleForm.count" autocomplete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="密碼" prop="pass">
+            <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
+        </el-form-item>
+
+        <el-form-item class='btn_wrap'>
+            <el-button type="primary" class="btn_block" @click="submitForm('ruleForm')">登錄</el-button>
+        </el-form-item>
+    </el-form>
+
+</div>

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import clinet_route from './client.js'
 Vue.use(VueRouter)
 
 const routes = [
@@ -44,8 +44,9 @@ const routes = [
         component: () =>
             import ('../views/player/index.vue')
     },
-
+    ...clinet_route,
 ]
+
 
 const router = new VueRouter({
     // mode: 'history',

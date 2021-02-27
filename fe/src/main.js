@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
 import loading from '@/components/request_loading_html/loading.js'
 // 前端路由
 import router from './router'
@@ -8,12 +9,13 @@ import router from './router'
 import blogApi from './lib/api/blogApi/index.js'
 // 格式化时间 moment.js
 import moment from 'moment';
-
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false
 Vue.prototype.$moment = moment;
 Vue.prototype.$blogApi = blogApi;
-Vue.use(loading)
-
+// Vue.use(loading)
+Vue.use(ElementUI);
 const log = console.log.bind(console)
 
 // 正常 格式日期显示  YY-MM-DD ...

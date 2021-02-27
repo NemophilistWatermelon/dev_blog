@@ -1,7 +1,7 @@
 .author_info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -10,9 +10,7 @@
 }
 
 .author_info a {
-    /* display: inline-block; */
-    float: left;
-    margin: 10px 30px;
+    display: block;
     height: 68px;
     transition: color 1s;
     background: url('../../assets/img/iconPic.png') no-repeat;
