@@ -12,6 +12,39 @@
     text-align left !important
     animation  _textShodow 3s infinite 
 
+.comments_wrap 
+    padding 15px
+    background-color #dbdbdb
+    box-shadow: 0 0 3px 0 solid 
+    .comment_submit_area
+        text-align: left
+        margin 10px 0
+    textarea
+        vertical-align: middle;
+        width 600px
+        height: 50px
+        border 2px solid #353535
+        margin-right 20px
+    button.commit
+        height: 50px
+        border 1px solid
+        background-color #353535
+        color #fff
+        padding 5px
+    textarea
+    button.commit 
+        outline none
+    .show_comments.comment_card 
+        padding: 3px
+        background-color: #CCC
+        outline: 1px dashed red
+    .show_comments 
+        text-align: left
+        color: #353535
+        .comment_master
+            margin-bottom: 5px
+        .comment_sub
+            margin-left 30px
 @keyframes _textShodow {
         0% {
             color #000

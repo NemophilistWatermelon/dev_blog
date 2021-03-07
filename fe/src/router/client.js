@@ -8,7 +8,14 @@ const index = {
     path: '/client/index',
     name: 'client_index',
     component: () =>
-        import ("@/views/client/index/index.vue")
+        import ("@/views/client/index/index.vue"),
+    children: [{
+        name: 'read_blog',
+        path: '/client/read',
+        component: () =>
+            import ('@/components/client/read_blog.vue'),
+
+    }, ]
 }
 export default [
     login,
