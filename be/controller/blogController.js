@@ -225,11 +225,28 @@ const blog_tag_query = {
 }
 
 
+const get_blog_mod = (req, res) => {
+    const emoji = require('../utils/emoji')
+    log('emoji', emoji)
+    return res.json({
+        msg: 'success',
+        emoji,
+        status: 200,
+    })
+}
+
+const blog_mood = {
+    method: 'get',
+    path: '/blog/mood',
+    func: get_blog_mod,
+}
+
+
 module.exports = [
     blog_all,
     blog_limit,
     blog_one,
     blog_write,
     blog_tag_query,
-
+    blog_mood,
 ]
