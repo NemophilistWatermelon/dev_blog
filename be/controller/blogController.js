@@ -195,8 +195,7 @@ const blog_one = {
     path: "/blog/one/:index",
     func: getBlogOne,
     another_func: async function(req, res, next) {
-        log('1')
-        log('中间件')
+        log('已经缓存<======>走的中间件')
         var index = req.params.index
         var data = await redis.pick(index)
         if (data.string_type !== null) {

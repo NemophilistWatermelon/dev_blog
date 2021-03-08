@@ -36,6 +36,8 @@ const Routes = [
     require(`${baseFilePath}/musicController`),
     // 翻译
     require(`${baseFilePath}/transController`),
+    // 留言
+    require(`${baseFilePath}/pushWordsController`)
 ]
 
 const __main = (router, routes) => {
