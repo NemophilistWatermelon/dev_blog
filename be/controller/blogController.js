@@ -248,5 +248,6 @@ module.exports = [
     blog_one,
     blog_write,
     blog_tag_query,
+    // 表情数据
     blog_mood,
 ]
