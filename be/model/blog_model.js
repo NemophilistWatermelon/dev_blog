@@ -8,7 +8,7 @@ const log = console.log.bind('console')
 
 class Blog {
     constructor(tableName) {
-        this.tableName = "blogtable";
+        this.tableName = "t_blog";
     }
     static new() {
         return new this();

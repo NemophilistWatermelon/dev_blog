@@ -7,8 +7,6 @@
     background-color rgb(238, 241, 246)
     text-align: left;
     line-height: 60px;
-  
-
 .el-aside 
     overflow unset
     color: #333;
@@ -26,4 +24,3 @@
     top 0
  .user * 
      margin-right: 10px
-    

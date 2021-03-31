@@ -1,7 +1,7 @@
 const { log } = require("../lib/util")
 
-//  留言模块
-const post_user_words = (req, res) => {
+//  用户留言
+const post_user_message = (req, res) => {
     var form = {
         yours: req.body.usr,
         partten: req.body.words,
@@ -18,5 +18,5 @@ const words = {
     func: post_user_words
 }
 module.exports = [
-    words,
+    post_user_message,
 ]

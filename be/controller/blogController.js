@@ -120,7 +120,6 @@ const postMyBlog = (req, res) => {
 
     try {
         result.save(form).then(data => {
-
             var JSONData = Object.assign({}, {
                 length: data.length
             }, {
@@ -129,7 +128,6 @@ const postMyBlog = (req, res) => {
 
             res.status(200).json(JSONData)
         }).catch(e => {
-
             response_err(res, 501, 'failed')
         })
 
@@ -154,7 +152,6 @@ const getBlogByTagName = async(req, res) => {
             data
         })
     } catch (error) {
-
         response_err(res, 501, 'failed')
     }
 
@@ -241,6 +238,8 @@ const blog_mood = {
 }
 
 
+
+// 路由导出
 module.exports = [
     blog_all,
     blog_limit,
